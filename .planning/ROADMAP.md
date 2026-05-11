@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Deployment** - Next.js project with static export deploying to GitHub Pages via CI/CD
 - [x] **Phase 2: Design System & Animation Infrastructure** - Ghibli visual tokens, animation library setup, image pipeline, and motion accessibility
 - [x] **Phase 3: Hero Scene & Scroll Storytelling** - Animated hero landscape with parallax and scroll-driven scene transition system
-- [ ] **Phase 4: Content Sections** - Projects, skills, about/timeline, contact, and navigation — all sections built with established animation patterns
+- [x] **Phase 4: Content Sections** - Projects, skills, about/timeline, contact, and navigation — all sections built with established animation patterns
 - [ ] **Phase 5: Polish & Optimization** - Ambient animations, responsive tuning, keyboard accessibility, SEO/meta, and final quality pass
 
 ## Phase Details
@@ -75,12 +75,12 @@ Plans:
   4. About section presents the developer's journey as a visual timeline with sequential scroll animations and a personal narrative
   5. Contact section displays email, GitHub, LinkedIn links with Ghibli-themed hover animations
   6. Fixed navigation allows smooth-scrolling to any section, highlights the active section, and adapts to mobile (hamburger menu or equivalent)
-**Plans:** 1/4 plans executed
+**Plans:** 4/4 plans executed
 Plans:
 - [x] 04-01-PLAN.md — Create data files (projects, skills, timeline) and navigation component with mobile support
-- [ ] 04-02-PLAN.md — Build Projects section (cards + grid) and Skills section (categorized icon grid)
-- [ ] 04-03-PLAN.md — Build About/Timeline section (alternating vertical timeline) and Contact section (icon links)
-- [ ] 04-04-PLAN.md — Wire all sections into page.tsx, integrate Navbar in layout.tsx, create project detail pages
+- [x] 04-02-PLAN.md — Build Projects section (cards + grid) and Skills section (categorized icon grid)
+- [x] 04-03-PLAN.md — Build About/Timeline section (alternating vertical timeline) and Contact section (icon links)
+- [x] 04-04-PLAN.md — Wire all sections into page.tsx, integrate Navbar in layout.tsx, create project detail pages
 **UI hint**: yes
 
 ### Phase 5: Polish & Optimization
@@ -93,7 +93,11 @@ Plans:
   3. The site renders correctly and is usable across mobile, tablet, and desktop viewports
   4. Pages have proper title, meta description, OG image, Twitter card tags, and structured data — sharing a link on social media shows an attractive preview
   5. A Ghibli-themed favicon is displayed, and a resume/CV PDF is downloadable from the site
-**Plans**: TBD
+**Plans:** 3 plans
+Plans:
+- [ ] 05-01-PLAN.md — Add ambient Lottie/CSS animations (floating clouds in hero, falling leaves across sections)
+- [ ] 05-02-PLAN.md — Add SEO metadata, OG image, Twitter card, JSON-LD, favicon, sitemap, and resume PDF
+- [ ] 05-03-PLAN.md — Keyboard accessibility (skip-link, ARIA, focus trap), semantic HTML, and responsive tuning
 **UI hint**: yes
 
 ## Progress
@@ -106,5 +110,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Foundation & Deployment | 1/1 | Complete | 2026-05-11 |
 | 2. Design System & Animation Infrastructure | 3/3 | Complete | 2026-05-11 |
 | 3. Hero Scene & Scroll Storytelling | 2/2 | Complete | 2026-05-11 |
-| 4. Content Sections | 1/4 | In Progress|  |
-| 5. Polish & Optimization | 0/0 | Not started | - |
+| 4. Content Sections | 4/4 | Complete | 2026-05-12 |
+| 5. Polish & Optimization | 0/3 | Planning complete | - |
