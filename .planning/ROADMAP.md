@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Design System & Animation Infrastructure** - Ghibli visual tokens, animation library setup, image pipeline, and motion accessibility
 - [x] **Phase 3: Hero Scene & Scroll Storytelling** - Animated hero landscape with parallax and scroll-driven scene transition system
 - [x] **Phase 4: Content Sections** - Projects, skills, about/timeline, contact, and navigation — all sections built with established animation patterns
-- [ ] **Phase 5: Polish & Optimization** - Ambient animations, responsive tuning, keyboard accessibility, SEO/meta, and final quality pass
+- [x] **Phase 5: Polish & Optimization** - Ambient animations, responsive tuning, keyboard accessibility, SEO/meta, and final quality pass
 
 ## Phase Details
 
@@ -95,9 +95,9 @@ Plans:
   5. A Ghibli-themed favicon is displayed, and a resume/CV PDF is downloadable from the site
 **Plans:** 3 plans
 Plans:
-- [ ] 05-01-PLAN.md — Add ambient Lottie/CSS animations (floating clouds in hero, falling leaves across sections)
-- [ ] 05-02-PLAN.md — Add SEO metadata, OG image, Twitter card, JSON-LD, favicon, sitemap, and resume PDF
-- [ ] 05-03-PLAN.md — Keyboard accessibility (skip-link, ARIA, focus trap), semantic HTML, and responsive tuning
+- [x] 05-01-PLAN.md — Add ambient Lottie/CSS animations (floating clouds in hero, falling leaves across sections)
+- [x] 05-02-PLAN.md — Add SEO metadata, OG image, Twitter card, JSON-LD, favicon, sitemap, and resume PDF
+- [x] 05-03-PLAN.md — Keyboard accessibility (skip-link, ARIA, focus trap), semantic HTML, and responsive tuning
 **UI hint**: yes
 
 ## Progress
@@ -111,4 +111,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Design System & Animation Infrastructure | 3/3 | Complete | 2026-05-11 |
 | 3. Hero Scene & Scroll Storytelling | 2/2 | Complete | 2026-05-11 |
 | 4. Content Sections | 4/4 | Complete | 2026-05-12 |
-| 5. Polish & Optimization | 0/3 | Planning complete | - |
+| 5. Polish & Optimization | 3/3 | Complete | 2026-05-12 |
