@@ -58,9 +58,9 @@ Plans:
   2. Developer name, "AI Engineer" title, and tagline appear with an entrance animation on page load
   3. A visual scroll cue (animated arrow or equivalent) is visible in the hero and invites the user to scroll down
   4. Scrolling past the hero into the next section triggers a smooth cinematic transition (fade, slide, or parallax shift) — not an abrupt content change
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 Plans:
-- [ ] 03-01-PLAN.md — Build hero landscape with multi-layer parallax, developer identity entrance animation, and scroll cue
+- [x] 03-01-PLAN.md — Build hero landscape with multi-layer parallax, developer identity entrance animation, and scroll cue
 - [ ] 03-02-PLAN.md — Implement cinematic scene transition system with pin/scrub and reusable SceneSection wrapper
 **UI hint**: yes
 
@@ -100,6 +100,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation & Deployment | 1/1 | Complete | 2026-05-11 |
 | 2. Design System & Animation Infrastructure | 3/3 | Complete | 2026-05-11 |
-| 3. Hero Scene & Scroll Storytelling | 0/2 | In progress | - |
+| 3. Hero Scene & Scroll Storytelling | 1/2 | In Progress|  |
 | 4. Content Sections | 0/0 | Not started | - |
 | 5. Polish & Optimization | 0/0 | Not started | - |
