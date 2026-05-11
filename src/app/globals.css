@@ -50,6 +50,16 @@
   }
 }
 
+@keyframes pulse-opacity {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
 @theme inline {
   --font-heading: var(--font-patrick-hand);
   --font-body: var(--font-noto-sans);
