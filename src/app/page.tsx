@@ -1,20 +1,22 @@
 import { HeroScene } from "@/components/hero/HeroScene";
-import { SceneSection } from "@/components/sections/SceneSection";
+import { ProjectsSection } from "@/components/sections/ProjectsSection";
+import { SkillsSection } from "@/components/sections/SkillsSection";
+import { AboutSection } from "@/components/sections/AboutSection";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
       <HeroScene />
+      <ProjectsSection />
+      <SkillsSection />
+      <AboutSection />
+      <ContactSection />
 
-      <SceneSection id="projects" className="min-h-screen px-6 py-20 sm:px-10 lg:px-16">
-        <h2 className="font-heading text-4xl text-primary">Projects</h2>
-        <p className="mt-4 text-foreground/60">Coming in Phase 4</p>
-      </SceneSection>
-
-      <SceneSection id="about" className="min-h-screen px-6 py-20 sm:px-10 lg:px-16">
-        <h2 className="font-heading text-4xl text-primary">About</h2>
-        <p className="mt-4 text-foreground/60">Coming in Phase 4</p>
-      </SceneSection>
+      <footer className="text-center py-8 text-foreground/40 text-sm">
+        <p>&copy; {new Date().getFullYear()} AI Engineer Portfolio</p>
+        <p>Built with a Ghibli spirit</p>
+      </footer>
     </main>
   );
 }

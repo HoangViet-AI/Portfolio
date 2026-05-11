@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { AnimationProvider } from "@/components/providers/AnimationProvider";
+import { Navbar } from "@/components/navigation/Navbar";
 import { notoSans, patrickHand } from "./fonts";
 import "./globals.css";
 
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${patrickHand.variable} ${notoSans.variable}`}>
       <body className="bg-background font-body text-foreground">
+        <Navbar />
         <AnimationProvider>{children}</AnimationProvider>
       </body>
     </html>
