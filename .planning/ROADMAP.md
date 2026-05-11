@@ -75,7 +75,12 @@ Plans:
   4. About section presents the developer's journey as a visual timeline with sequential scroll animations and a personal narrative
   5. Contact section displays email, GitHub, LinkedIn links with Ghibli-themed hover animations
   6. Fixed navigation allows smooth-scrolling to any section, highlights the active section, and adapts to mobile (hamburger menu or equivalent)
-**Plans**: TBD
+**Plans:** 4 plans
+Plans:
+- [ ] 04-01-PLAN.md — Create data files (projects, skills, timeline) and navigation component with mobile support
+- [ ] 04-02-PLAN.md — Build Projects section (cards + grid) and Skills section (categorized icon grid)
+- [ ] 04-03-PLAN.md — Build About/Timeline section (alternating vertical timeline) and Contact section (icon links)
+- [ ] 04-04-PLAN.md — Wire all sections into page.tsx, integrate Navbar in layout.tsx, create project detail pages
 **UI hint**: yes
 
 ### Phase 5: Polish & Optimization
@@ -101,5 +106,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Foundation & Deployment | 1/1 | Complete | 2026-05-11 |
 | 2. Design System & Animation Infrastructure | 3/3 | Complete | 2026-05-11 |
 | 3. Hero Scene & Scroll Storytelling | 2/2 | Complete | 2026-05-11 |
-| 4. Content Sections | 0/0 | Not started | - |
+| 4. Content Sections | 0/4 | In progress | - |
 | 5. Polish & Optimization | 0/0 | Not started | - |
