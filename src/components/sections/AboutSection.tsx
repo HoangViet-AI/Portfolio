@@ -11,7 +11,7 @@ export function AboutSection() {
   const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <SceneSection id="about" className="min-h-screen px-6 py-20 sm:px-10 lg:px-16">
+    <SceneSection id="about" ariaLabel="About me and career timeline" className="min-h-screen px-6 py-20 sm:px-10 lg:px-16">
       <h2 className="font-heading text-4xl sm:text-5xl text-primary text-center mb-4">
         About Me
       </h2>

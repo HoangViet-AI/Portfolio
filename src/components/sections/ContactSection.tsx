@@ -27,12 +27,20 @@ const contactLinks = [
     label: "LinkedIn",
     external: true,
   },
+  {
+    name: "Resume",
+    href: "/Portfolio/resume.pdf",
+    icon: "📄",
+    label: "Resume",
+    external: false,
+  },
 ];
 
 export function ContactSection() {
   return (
     <SceneSection
       id="contact"
+      ariaLabel="Contact information"
       className="min-h-screen px-6 py-20 sm:px-10 lg:px-16 flex items-center justify-center"
     >
       <MotionWrapper variant={fadeInUp} once>
@@ -49,8 +57,23 @@ export function ContactSection() {
               <a
                 key={link.name}
                 href={link.href}
+                className="focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-xl"
+                aria-label={
+                  link.name === "Email"
+                    ? "Send email"
+                    : link.name === "GitHub"
+                      ? "Visit GitHub profile"
+                      : link.name === "LinkedIn"
+                        ? "Visit LinkedIn profile"
+                        : link.name === "Resume"
+                          ? "Download resume"
+                          : link.name
+                }
                 {...(link.external
                   ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+                {...(link.name === "Resume"
+                  ? { download: "resume.pdf" }
                   : {})}
               >
                 <MDiv

@@ -12,7 +12,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
   return (
-    <Link href={`/projects/${project.slug}`}>
+    <Link href={`/projects/${project.slug}`} className="focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-2xl block">
       <MotionWrapper once>
         <MDiv
           className="rounded-2xl bg-ghibli-cream shadow-md hover:shadow-xl transition-shadow overflow-hidden border border-warm/30 cursor-pointer"

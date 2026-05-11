@@ -65,6 +65,39 @@
   --font-body: var(--font-noto-sans);
 }
 
+/* Skip-to-content link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: var(--z-index-modal);
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-ghibli-cream);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skip-link:focus {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Focus-visible styles for interactive elements */
+@layer utilities {
+  a:focus-visible,
+  button:focus-visible,
+  [role="link"]:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

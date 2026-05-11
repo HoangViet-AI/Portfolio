@@ -8,6 +8,7 @@ import { PARALLAX_BREAKPOINT } from "@/lib/animation/parallax";
 import { HeroLandscape } from "@/components/hero/HeroLandscape";
 import { HeroIdentity } from "@/components/hero/HeroIdentity";
 import { ScrollCue } from "@/components/hero/ScrollCue";
+import { FloatingClouds } from "@/components/ambient/FloatingClouds";
 
 export function HeroScene() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -52,6 +53,7 @@ export function HeroScene() {
       </div>
       <HeroIdentity />
       <ScrollCue />
+      <FloatingClouds />
     </section>
   );
 }

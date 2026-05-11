@@ -10,7 +10,7 @@ type HeroLandscapeProps = {
 
 export function HeroLandscape({ triggerRef }: HeroLandscapeProps) {
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden" aria-hidden="true" role="presentation">
       {/* Layer 1: Sky gradient (slowest parallax, z-10) */}
       <ParallaxLayer
         speed={HERO_PARALLAX_SPEEDS.sky}

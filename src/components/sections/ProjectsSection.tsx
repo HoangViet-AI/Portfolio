@@ -6,7 +6,7 @@ import { SceneSection } from "@/components/sections/SceneSection";
 
 export function ProjectsSection() {
   return (
-    <SceneSection id="projects" className="min-h-screen px-6 py-20 sm:px-10 lg:px-16">
+    <SceneSection id="projects" ariaLabel="Featured projects" className="min-h-screen px-6 py-20 sm:px-10 lg:px-16">
       <h2 className="font-heading text-4xl sm:text-5xl text-primary text-center mb-4">
         Projects
       </h2>

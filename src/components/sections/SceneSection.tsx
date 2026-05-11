@@ -8,11 +8,12 @@ type SceneSectionProps = {
   children: ReactNode;
   className?: string;
   id?: string;
+  ariaLabel?: string;
 };
 
-export function SceneSection({ children, className, id }: SceneSectionProps) {
+export function SceneSection({ children, className, id, ariaLabel }: SceneSectionProps) {
   return (
-    <section id={id} className={className}>
+    <section id={id} className={className} aria-label={ariaLabel}>
       <MotionWrapper variant={fadeInUp} once>
         {children}
       </MotionWrapper>

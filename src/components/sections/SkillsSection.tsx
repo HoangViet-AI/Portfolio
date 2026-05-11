@@ -8,7 +8,7 @@ import { fadeInUp } from "@/lib/animation/variants";
 
 export function SkillsSection() {
   return (
-    <SceneSection id="skills" className="min-h-screen px-6 py-20 sm:px-10 lg:px-16">
+    <SceneSection id="skills" ariaLabel="Technical skills" className="min-h-screen px-6 py-20 sm:px-10 lg:px-16">
       <h2 className="font-heading text-4xl sm:text-5xl text-primary text-center mb-4">
         Skills
       </h2>
@@ -21,7 +21,7 @@ export function SkillsSection() {
             <h3 className="font-heading text-2xl text-secondary mb-6">
               {category.name}
             </h3>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
               {category.skills.map((skill) => (
                 <SkillItem key={skill.name} skill={skill} />
               ))}
