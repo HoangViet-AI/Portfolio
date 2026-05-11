@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Deployment** - Next.js project with static export deploying to GitHub Pages via CI/CD
 - [x] **Phase 2: Design System & Animation Infrastructure** - Ghibli visual tokens, animation library setup, image pipeline, and motion accessibility
-- [ ] **Phase 3: Hero Scene & Scroll Storytelling** - Animated hero landscape with parallax and scroll-driven scene transition system
+- [x] **Phase 3: Hero Scene & Scroll Storytelling** - Animated hero landscape with parallax and scroll-driven scene transition system
 - [ ] **Phase 4: Content Sections** - Projects, skills, about/timeline, contact, and navigation — all sections built with established animation patterns
 - [ ] **Phase 5: Polish & Optimization** - Ambient animations, responsive tuning, keyboard accessibility, SEO/meta, and final quality pass
 
@@ -58,10 +58,10 @@ Plans:
   2. Developer name, "AI Engineer" title, and tagline appear with an entrance animation on page load
   3. A visual scroll cue (animated arrow or equivalent) is visible in the hero and invites the user to scroll down
   4. Scrolling past the hero into the next section triggers a smooth cinematic transition (fade, slide, or parallax shift) — not an abrupt content change
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans executed
 Plans:
 - [x] 03-01-PLAN.md — Build hero landscape with multi-layer parallax, developer identity entrance animation, and scroll cue
-- [ ] 03-02-PLAN.md — Implement cinematic scene transition system with pin/scrub and reusable SceneSection wrapper
+- [x] 03-02-PLAN.md — Implement cinematic scene transition system with pin/scrub and reusable SceneSection wrapper
 **UI hint**: yes
 
 ### Phase 4: Content Sections
@@ -100,6 +100,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation & Deployment | 1/1 | Complete | 2026-05-11 |
 | 2. Design System & Animation Infrastructure | 3/3 | Complete | 2026-05-11 |
-| 3. Hero Scene & Scroll Storytelling | 1/2 | In Progress|  |
+| 3. Hero Scene & Scroll Storytelling | 2/2 | Complete | 2026-05-11 |
 | 4. Content Sections | 0/0 | Not started | - |
 | 5. Polish & Optimization | 0/0 | Not started | - |
