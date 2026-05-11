@@ -1,3 +1,67 @@
 @import "tailwindcss";
 
-/* Ghibli palette tokens will be added in Phase 2 via @theme */
+@theme {
+  --color-ghibli-green: #7bae7f;
+  --color-ghibli-pink: #f4a7bb;
+  --color-ghibli-sky: #87ceeb;
+  --color-ghibli-wheat: #f5deb3;
+  --color-ghibli-cream: #fafaf5;
+  --color-ghibli-ink: #3b3b3b;
+
+  --color-primary: var(--color-ghibli-green);
+  --color-secondary: var(--color-ghibli-pink);
+  --color-accent: var(--color-ghibli-sky);
+  --color-warm: var(--color-ghibli-wheat);
+  --color-background: var(--color-ghibli-cream);
+  --color-foreground: var(--color-ghibli-ink);
+
+  --z-index-background: 0;
+  --z-index-scene-bg: 10;
+  --z-index-scene-mid: 20;
+  --z-index-scene-fg: 30;
+  --z-index-content: 40;
+  --z-index-particles: 50;
+  --z-index-nav: 100;
+  --z-index-modal: 200;
+
+  --ease-ghibli: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-fade-in: fade-in 0.6s var(--ease-ghibli) both;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@theme inline {
+  --font-heading: var(--font-patrick-hand);
+  --font-body: var(--font-noto-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
