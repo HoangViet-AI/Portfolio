@@ -1,19 +1,55 @@
 "use client";
 
+import "@/lib/animation/gsap-config";
 import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { PARALLAX_BREAKPOINT } from "@/lib/animation/parallax";
 import { HeroLandscape } from "@/components/hero/HeroLandscape";
 import { HeroIdentity } from "@/components/hero/HeroIdentity";
 import { ScrollCue } from "@/components/hero/ScrollCue";
 
 export function HeroScene() {
-  const triggerRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const landscapeRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      const section = sectionRef.current;
+      const landscape = landscapeRef.current;
+      if (!section || !landscape) return;
+
+      const mm = gsap.matchMedia();
+      mm.add(
+        `${PARALLAX_BREAKPOINT} and (prefers-reduced-motion: no-preference)`,
+        () => {
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: section,
+              pin: true,
+              scrub: 1,
+              start: "top top",
+              end: "+=50vh",
+            },
+          });
+
+          tl.to(landscape, { yPercent: -30, ease: "none" });
+        }
+      );
+
+      return () => mm.revert();
+    },
+    { scope: sectionRef }
+  );
 
   return (
     <section
-      ref={triggerRef}
+      ref={sectionRef}
       className="relative h-screen w-full overflow-hidden"
     >
-      <HeroLandscape triggerRef={triggerRef} />
+      <div ref={landscapeRef}>
+        <HeroLandscape triggerRef={sectionRef} />
+      </div>
       <HeroIdentity />
       <ScrollCue />
     </section>
