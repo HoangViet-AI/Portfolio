@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "AI Engineer portfolio with Studio Ghibli-inspired design. Explore AI/ML projects, skills, and experience through an immersive animated storytelling experience.",
     images: [
       {
-        url: "/og-image.png",
+        url: "og-image.png",
         width: 1200,
         height: 630,
         alt: "Hoang Viet Portfolio",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Hoang Viet Portfolio",
     description:
       "AI Engineer portfolio with Studio Ghibli-inspired design. Explore AI/ML projects, skills, and experience through an immersive animated storytelling experience.",
-    images: ["/og-image.png"],
+    images: ["og-image.png"],
   },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
