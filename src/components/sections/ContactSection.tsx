@@ -54,7 +54,8 @@ const contactLinks = [
   {
     key: "resume" as const,
     href: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume.pdf`,
-    iconType: "component" as const,
+    iconType: "url" as const,
+    iconUrl: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/icons/cv.png`,
     external: false,
   },
 ];
