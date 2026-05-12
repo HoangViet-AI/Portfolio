@@ -31,7 +31,7 @@ export function ParallaxLayer({ speed, children, className, triggerRef }: Parall
           ease: "none",
           scrollTrigger: {
             trigger,
-            start: "top bottom",
+            start: "top top",
             end: "bottom top",
             scrub: 1,
           } satisfies ScrollTrigger.Vars,
