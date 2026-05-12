@@ -46,11 +46,11 @@ export function HeroIdentity({
     return (
       <div className="absolute inset-0 z-[40] flex flex-col items-center justify-center px-4">
         <div className="text-center">
-          <h1 className="font-heading text-5xl text-primary sm:text-7xl">
+          <h1 className="font-heading text-5xl text-foreground sm:text-7xl">
             {name}
           </h1>
-          <p className="mt-3 text-2xl text-secondary sm:text-4xl">{title}</p>
-          <p className="mt-4 max-w-md font-body text-base text-foreground/60 sm:text-lg">
+          <p className="mt-3 text-2xl text-primary font-semibold sm:text-4xl">{title}</p>
+          <p className="mt-4 max-w-md font-body text-base text-foreground/80 sm:text-lg">
             {tagline}
           </p>
         </div>
@@ -68,11 +68,11 @@ export function HeroIdentity({
           animate="visible"
           variants={fadeIn}
         >
-          <h1 className="font-heading text-5xl text-primary sm:text-7xl">
+          <h1 className="font-heading text-5xl text-foreground sm:text-7xl">
             {name}
           </h1>
-          <p className="mt-3 text-2xl text-secondary sm:text-4xl">{title}</p>
-          <p className="mt-4 max-w-md font-body text-base text-foreground/60 sm:text-lg">
+          <p className="mt-3 text-2xl text-primary font-semibold sm:text-4xl">{title}</p>
+          <p className="mt-4 max-w-md font-body text-base text-foreground/80 sm:text-lg">
             {tagline}
           </p>
         </MDiv>
@@ -90,15 +90,15 @@ export function HeroIdentity({
         variants={staggerContainer}
       >
         <MDiv variants={staggerChild}>
-          <h1 className="font-heading text-5xl text-primary sm:text-7xl">
+          <h1 className="font-heading text-5xl text-foreground sm:text-7xl">
             {name}
           </h1>
         </MDiv>
         <MDiv variants={staggerChild}>
-          <p className="mt-3 text-2xl text-secondary sm:text-4xl">{title}</p>
+          <p className="mt-3 text-2xl text-primary font-semibold sm:text-4xl">{title}</p>
         </MDiv>
         <MDiv variants={staggerChild}>
-          <p className="mt-4 max-w-md font-body text-base text-foreground/60 sm:text-lg">
+          <p className="mt-4 max-w-md font-body text-base text-foreground/80 sm:text-lg">
             {tagline}
           </p>
         </MDiv>
