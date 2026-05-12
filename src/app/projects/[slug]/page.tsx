@@ -49,10 +49,18 @@ export default async function ProjectDetailPage({
       </Link>
 
       <div className="h-64 sm:h-80 rounded-2xl overflow-hidden mb-8">
-        <div
-          className="w-full h-full"
-          style={{ background: project.thumbnail }}
-        />
+        {project.screenshots.length > 0 ? (
+          <img
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${project.screenshots[0]}`}
+            alt={project.title}
+            className="w-full h-full object-cover object-top"
+          />
+        ) : (
+          <div
+            className="w-full h-full"
+            style={{ background: project.thumbnail }}
+          />
+        )}
       </div>
 
       <h1 className="font-heading text-4xl sm:text-5xl text-foreground mb-4">

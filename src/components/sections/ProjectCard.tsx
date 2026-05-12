@@ -21,10 +21,19 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         >
           {/* Thumbnail */}
           <div className="h-48 rounded-t-2xl overflow-hidden">
-            <div
-              className="w-full h-full"
-              style={{ background: project.thumbnail }}
-            />
+            {project.screenshots.length > 0 ? (
+              <img
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${project.screenshots[0]}`}
+                alt={project.title}
+                className="w-full h-full object-cover object-top"
+                loading="lazy"
+              />
+            ) : (
+              <div
+                className="w-full h-full"
+                style={{ background: project.thumbnail }}
+              />
+            )}
           </div>
 
           {/* Content */}
