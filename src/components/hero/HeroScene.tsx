@@ -48,7 +48,7 @@ export function HeroScene() {
       ref={sectionRef}
       className="relative h-screen w-full overflow-hidden"
     >
-      <div ref={landscapeRef}>
+      <div ref={landscapeRef} className="absolute inset-0">
         <HeroLandscape triggerRef={sectionRef} />
       </div>
       <HeroIdentity />
