@@ -29,7 +29,7 @@ const contactLinks = [
   },
   {
     name: "Resume",
-    href: "/Portfolio/resume.pdf",
+    href: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume.pdf`,
     icon: "📄",
     label: "Resume",
     external: false,

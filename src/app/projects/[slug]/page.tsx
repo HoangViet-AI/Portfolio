@@ -20,7 +20,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${project.title} | AI Engineer Portfolio`,
+    title: `${project.title} | Hoang Viet Portfolio`,
     description: project.description,
   };
 }
@@ -98,6 +98,25 @@ export default async function ProjectDetailPage({
           </p>
         ))}
       </div>
+
+      {project.screenshots.length > 0 && (
+        <div className="mt-12">
+          <h2 className="font-heading text-2xl text-foreground mb-6">
+            Architecture
+          </h2>
+          <div className="flex flex-col gap-6">
+            {project.screenshots.map((src, index) => (
+              <img
+                key={index}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${src}`}
+                alt={`${project.title} screenshot ${index + 1}`}
+                className="w-full rounded-2xl border border-warm/20 shadow-lg"
+                loading="lazy"
+              />
+            ))}
+          </div>
+        </div>
+      )}
     </main>
   );
 }

@@ -6,15 +6,15 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | AI Engineer Portfolio",
-    default: "AI Engineer Portfolio — Ghibli-Inspired",
+    template: "%s | Hoang Viet Portfolio",
+    default: "Hoang Viet Portfolio",
   },
   description:
     "AI Engineer portfolio with Studio Ghibli-inspired design. Explore AI/ML projects, skills, and experience through an immersive animated storytelling experience.",
   metadataBase: new URL("https://hoangviet-ai.github.io/Portfolio"),
   openGraph: {
     type: "website",
-    title: "AI Engineer Portfolio",
+    title: "Hoang Viet Portfolio",
     description:
       "AI Engineer portfolio with Studio Ghibli-inspired design. Explore AI/ML projects, skills, and experience through an immersive animated storytelling experience.",
     images: [
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "AI Engineer Portfolio",
+        alt: "Hoang Viet Portfolio",
       },
     ],
-    siteName: "AI Engineer Portfolio",
+    siteName: "Hoang Viet Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Engineer Portfolio",
+    title: "Hoang Viet Portfolio",
     description:
       "AI Engineer portfolio with Studio Ghibli-inspired design. Explore AI/ML projects, skills, and experience through an immersive animated storytelling experience.",
     images: ["/og-image.png"],

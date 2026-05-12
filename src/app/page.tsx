@@ -32,7 +32,7 @@ export default function Home() {
       <ContactSection />
 
       <footer aria-label="Site footer" className="text-center py-8 text-foreground/40 text-sm">
-        <p>&copy; {new Date().getFullYear()} AI Engineer Portfolio</p>
+        <p>&copy; {new Date().getFullYear()} Hoang Viet Portfolio</p>
         <p>Built with a Ghibli spirit</p>
       </footer>
     </main>

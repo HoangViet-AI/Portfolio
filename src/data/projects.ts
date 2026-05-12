@@ -27,7 +27,7 @@ Built with LangGraph using a Router-Verifier pattern for intelligent query routi
 Includes a custom MCP-server (Model Context Protocol) exposing Google Places API and internal Historical Knowledge Bases as tools for the LLM agent. Strict Guardrails and citation logic ensure every generated "story" is grounded in landmarks.json, eliminating hallucination in historical dates and facts.
 
 Tech Stack: Python, FastAPI, LangGraph, FAISS, OpenAI, Flutter, MCP.`,
-    screenshots: [],
+    screenshots: ["/projects/vietstorylens-arch.webp"],
   },
   {
     slug: "fungi-detection",
