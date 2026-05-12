@@ -100,24 +100,24 @@
 
 @keyframes dog-run {
   0% {
-    transform: translateX(-50px) scaleX(-1);
-  }
-  49% {
-    transform: translateX(calc(100vw + 10px)) scaleX(-1);
-  }
-  50% {
     transform: translateX(calc(100vw + 10px)) scaleX(1);
   }
-  99% {
+  49% {
     transform: translateX(-50px) scaleX(1);
   }
-  100% {
+  50% {
     transform: translateX(-50px) scaleX(-1);
+  }
+  99% {
+    transform: translateX(calc(100vw + 10px)) scaleX(-1);
+  }
+  100% {
+    transform: translateX(calc(100vw + 10px)) scaleX(1);
   }
 }
 
 .running-dog {
-  animation: dog-run 12s linear infinite;
+  animation: dog-run 24s linear infinite;
   will-change: transform;
 }
 
