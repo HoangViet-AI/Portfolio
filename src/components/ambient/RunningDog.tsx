@@ -21,12 +21,12 @@ export function RunningDog() {
         className="running-dog"
         style={{ animationPlayState: playState }}
       >
-        <span
-          className="inline-block text-3xl"
+        <img
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/totoro-walk.gif`}
+          alt=""
+          className="h-16 w-auto"
           style={{ animationPlayState: playState }}
-        >
-          🐕
-        </span>
+        />
       </div>
     </div>
   );
