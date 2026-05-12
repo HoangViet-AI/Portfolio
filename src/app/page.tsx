@@ -1,5 +1,6 @@
 import { HeroScene } from "@/components/hero/HeroScene";
 import { FallingLeaves } from "@/components/ambient/FallingLeaves";
+import { RunningDog } from "@/components/ambient/RunningDog";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
 import { AboutSection } from "@/components/sections/AboutSection";
@@ -25,6 +26,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <FallingLeaves />
+      <RunningDog />
       <HeroScene />
       <ProjectsSection />
       <SkillsSection />
