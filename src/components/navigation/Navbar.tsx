@@ -6,15 +6,11 @@ import { div as MDiv } from "motion/react-m";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
-const NAV_LINKS = [
-  { label: "Projects", sectionId: "projects" },
-  { label: "Skills", sectionId: "skills" },
-  { label: "About", sectionId: "about" },
-  { label: "Contact", sectionId: "contact" },
-] as const;
+const NAV_KEYS = ["projects", "skills", "about", "contact"] as const;
 
-const SECTION_IDS = NAV_LINKS.map((link) => link.sectionId);
+const SECTION_IDS = [...NAV_KEYS];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,6 +19,7 @@ export function Navbar() {
   const reducedMotion = useReducedMotion();
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const hamburgerRef = useRef<HTMLButtonElement>(null);
+  const { locale, t, toggleLocale } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -126,30 +123,40 @@ export function Navbar() {
         </a>
 
         {/* Desktop nav links */}
-        <ul className="hidden items-center gap-8 md:flex">
-          {NAV_LINKS.map((link) => (
-            <li key={link.sectionId}>
-              <a
-                href={`#${link.sectionId}`}
-                onClick={(e) => handleNavClick(e, link.sectionId)}
-                className={`relative pb-1 text-sm font-medium transition-colors duration-200 ${
-                  activeSection === link.sectionId
-                    ? "text-primary"
-                    : "text-foreground/70 hover:text-foreground"
-                }`}
-              >
-                {link.label}
-                {activeSection === link.sectionId && (
-                  <MDiv
-                    className="absolute bottom-0 left-0 h-0.5 w-full rounded-full bg-primary"
-                    layoutId="navbar-indicator"
-                    transition={{ duration: 0.3 }}
-                  />
-                )}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="hidden items-center gap-8 md:flex">
+          <ul className="flex items-center gap-8">
+            {NAV_KEYS.map((key) => (
+              <li key={key}>
+                <a
+                  href={`#${key}`}
+                  onClick={(e) => handleNavClick(e, key)}
+                  className={`relative pb-1 text-sm font-medium transition-colors duration-200 ${
+                    activeSection === key
+                      ? "text-primary"
+                      : "text-foreground/70 hover:text-foreground"
+                  }`}
+                >
+                  {t.nav[key]}
+                  {activeSection === key && (
+                    <MDiv
+                      className="absolute bottom-0 left-0 h-0.5 w-full rounded-full bg-primary"
+                      layoutId="navbar-indicator"
+                      transition={{ duration: 0.3 }}
+                    />
+                  )}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <button
+            type="button"
+            onClick={toggleLocale}
+            className="rounded-lg border border-primary/30 px-2.5 py-1 text-xs font-semibold text-primary transition-colors hover:bg-primary/10"
+            aria-label={locale === "en" ? "Switch to Vietnamese" : "Chuyển sang Tiếng Anh"}
+          >
+            {locale === "en" ? "VI" : "EN"}
+          </button>
+        </div>
 
         {/* Mobile hamburger button */}
         <button
@@ -157,7 +164,7 @@ export function Navbar() {
           type="button"
           onClick={() => setMenuOpen((prev) => !prev)}
           className="flex h-11 w-11 flex-col items-center justify-center gap-1.5 md:hidden"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-label={menuOpen ? t.nav.closeMenu : t.nav.openMenu}
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
         >
@@ -190,20 +197,28 @@ export function Navbar() {
             exit={{ opacity: 0 }}
             transition={{ duration: reducedMotion ? 0 : 0.2 }}
           >
-            {NAV_LINKS.map((link) => (
+            {NAV_KEYS.map((key) => (
               <a
-                key={link.sectionId}
-                href={`#${link.sectionId}`}
-                onClick={(e) => handleNavClick(e, link.sectionId)}
+                key={key}
+                href={`#${key}`}
+                onClick={(e) => handleNavClick(e, key)}
                 className={`font-heading text-3xl min-h-[44px] flex items-center transition-colors ${
-                  activeSection === link.sectionId
+                  activeSection === key
                     ? "text-primary"
                     : "text-foreground/70 hover:text-foreground"
                 }`}
               >
-                {link.label}
+                {t.nav[key]}
               </a>
             ))}
+            <button
+              type="button"
+              onClick={toggleLocale}
+              className="mt-4 rounded-lg border border-primary/30 px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/10"
+              aria-label={locale === "en" ? "Switch to Vietnamese" : "Chuyển sang Tiếng Anh"}
+            >
+              {locale === "en" ? "Tiếng Việt" : "English"}
+            </button>
           </MDiv>
         )}
       </AnimatePresence>

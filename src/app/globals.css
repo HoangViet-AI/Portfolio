@@ -118,12 +118,12 @@
 }
 
 .running-dog {
-  animation: totoro-move 24s linear infinite;
+  animation: totoro-move 48s linear infinite;
   will-change: transform;
 }
 
 .running-dog img {
-  animation: totoro-flip 24s step-end infinite;
+  animation: totoro-flip 48s step-end infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

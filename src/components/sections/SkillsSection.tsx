@@ -5,15 +5,18 @@ import { SkillItem } from "./SkillItem";
 import { SceneSection } from "@/components/sections/SceneSection";
 import { MotionWrapper } from "@/components/animation/MotionWrapper";
 import { fadeInUp } from "@/lib/animation/variants";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export function SkillsSection() {
+  const { t } = useLanguage();
+
   return (
-    <SceneSection id="skills" ariaLabel="Technical skills" className="min-h-screen px-6 py-20 sm:px-10 lg:px-16">
+    <SceneSection id="skills" ariaLabel={t.skills.heading} className="min-h-screen px-6 py-20 sm:px-10 lg:px-16">
       <h2 className="font-heading text-4xl sm:text-5xl text-primary text-center mb-4">
-        Skills
+        {t.skills.heading}
       </h2>
       <p className="text-foreground/60 text-center mb-12 max-w-2xl mx-auto">
-        Technologies and tools I work with across the AI and software engineering landscape.
+        {t.skills.subtitle}
       </p>
       <div className="max-w-5xl mx-auto space-y-12">
         {skillCategories.map((category) => (

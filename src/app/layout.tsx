@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { AnimationProvider } from "@/components/providers/AnimationProvider";
+import { LanguageProvider } from "@/lib/i18n/LanguageContext";
 import { Navbar } from "@/components/navigation/Navbar";
 import { notoSans, patrickHand } from "./fonts";
 import "./globals.css";
@@ -55,8 +56,10 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>
-        <Navbar />
-        <AnimationProvider>{children}</AnimationProvider>
+        <LanguageProvider>
+          <Navbar />
+          <AnimationProvider>{children}</AnimationProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

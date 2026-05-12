@@ -6,6 +6,7 @@ import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { PARALLAX_BREAKPOINT } from "@/lib/animation/parallax";
 import { fadeIn } from "@/lib/animation/variants";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 const ghibliEase = [0.22, 1, 0.36, 1] as const;
 
@@ -35,11 +36,10 @@ type HeroIdentityProps = {
 
 export function HeroIdentity({
   name = "Nguyen Viet Hoang",
-  title = "AI Engineer",
-  tagline = "Building intelligent systems with Computer Vision, Agentic RAG & production ML",
 }: HeroIdentityProps) {
   const shouldReduce = useReducedMotion();
   const isDesktop = useMediaQuery(PARALLAX_BREAKPOINT);
+  const { t } = useLanguage();
 
   // Reduced motion: render static content
   if (shouldReduce) {
@@ -49,9 +49,9 @@ export function HeroIdentity({
           <h1 className="font-heading text-5xl text-foreground sm:text-7xl">
             {name}
           </h1>
-          <p className="mt-3 text-2xl text-primary font-semibold sm:text-4xl">{title}</p>
+          <p className="mt-3 text-2xl text-primary font-semibold sm:text-4xl">{t.hero.title}</p>
           <p className="mt-4 max-w-md font-body text-base text-foreground/80 sm:text-lg">
-            {tagline}
+            {t.hero.tagline}
           </p>
         </div>
       </div>
@@ -71,9 +71,9 @@ export function HeroIdentity({
           <h1 className="font-heading text-5xl text-foreground sm:text-7xl">
             {name}
           </h1>
-          <p className="mt-3 text-2xl text-primary font-semibold sm:text-4xl">{title}</p>
+          <p className="mt-3 text-2xl text-primary font-semibold sm:text-4xl">{t.hero.title}</p>
           <p className="mt-4 max-w-md font-body text-base text-foreground/80 sm:text-lg">
-            {tagline}
+            {t.hero.tagline}
           </p>
         </MDiv>
       </div>
@@ -95,11 +95,11 @@ export function HeroIdentity({
           </h1>
         </MDiv>
         <MDiv variants={staggerChild}>
-          <p className="mt-3 text-2xl text-primary font-semibold sm:text-4xl">{title}</p>
+          <p className="mt-3 text-2xl text-primary font-semibold sm:text-4xl">{t.hero.title}</p>
         </MDiv>
         <MDiv variants={staggerChild}>
           <p className="mt-4 max-w-md font-body text-base text-foreground/80 sm:text-lg">
-            {tagline}
+            {t.hero.tagline}
           </p>
         </MDiv>
       </MDiv>

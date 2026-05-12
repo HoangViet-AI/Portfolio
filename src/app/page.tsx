@@ -5,6 +5,7 @@ import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { Footer } from "@/components/layout/Footer";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -32,11 +33,7 @@ export default function Home() {
       <SkillsSection />
       <AboutSection />
       <ContactSection />
-
-      <footer aria-label="Site footer" className="text-center py-8 text-foreground/40 text-sm">
-        <p>&copy; {new Date().getFullYear()} Hoang Viet Portfolio</p>
-        <p>Built with a Ghibli spirit</p>
-      </footer>
+      <Footer />
     </main>
   );
 }
