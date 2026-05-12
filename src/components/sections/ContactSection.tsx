@@ -8,21 +8,21 @@ import { fadeInUp } from "@/lib/animation/variants";
 const contactLinks = [
   {
     name: "Email",
-    href: "mailto:hello@example.com",
+    href: "mailto:ngviethoang.work@gmail.com",
     icon: "✉️",
     label: "Email",
     external: false,
   },
   {
     name: "GitHub",
-    href: "https://github.com/username",
+    href: "https://github.com/HoangViet-AI",
     icon: "🐙",
     label: "GitHub",
     external: true,
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/username",
+    href: "https://linkedin.com/in/nguyenviethoang-ai",
     icon: "💼",
     label: "LinkedIn",
     external: true,

@@ -7,39 +7,39 @@ export interface TimelineEntry {
 
 export const timelineEntries: TimelineEntry[] = [
   {
-    year: "2018",
-    title: "Computer Science Degree",
-    description:
-      "Graduated with a B.S. in Computer Science, specializing in algorithms and data structures. First exposure to machine learning through a capstone project on image classification.",
-  },
-  {
-    year: "2019",
-    title: "ML Research Internship",
-    description:
-      "Joined a university lab as a research intern, working on natural language processing and text summarization. Published first paper on abstractive summarization using seq2seq models.",
-  },
-  {
-    year: "2020",
-    title: "Computer Vision Engineer",
-    description:
-      "First industry role building real-time object detection pipelines for manufacturing quality control. Deployed YOLO-based models that reduced defect escape rate by 45%.",
-  },
-  {
     year: "2022",
-    title: "NLP & Conversational AI",
+    title: "Bachelor of Machine Learning",
     description:
-      "Transitioned to an NLP-focused team, developing conversational agents and sentiment analysis systems. Led the migration from rule-based to transformer-based architectures.",
+      "Began studying Machine Learning at HCMC University of Technology. Dove deep into algorithms, neural networks, and computer vision fundamentals.",
   },
   {
     year: "2023",
-    title: "AI Engineer — LLM Applications",
+    title: "Python Instructor & Outstanding Graduate",
     description:
-      "Current role designing and building production LLM applications, including RAG systems, AI-powered code review tools, and multimodal content generation pipelines.",
+      "Taught basic and advanced Python to high school students while earning Outstanding Graduate of the Class of 2023. Developed strong communication skills by breaking complex technical topics into clear lessons.",
   },
   {
     year: "2024",
-    title: "Open Source Contributions",
+    title: "Hackathon Champion",
     description:
-      "Active contributor to open-source ML tooling. Maintaining a popular fine-tuning toolkit and publishing research on efficient inference optimization techniques.",
+      "Won the PieoneDream Hackathon AI x Blockchain. Built VietStoryLens — an AI-powered landmark recognition app that became the LotusHackathon MVP. Active as Google Developer Group facilitator at DevFest.",
+  },
+  {
+    year: "2025 Q1",
+    title: "AI Engineer Intern — ThinkWare",
+    description:
+      "Executed high-precision data annotation for autonomous driving, including Object Detection and classification of thousands of objects in complex road scenes.",
+  },
+  {
+    year: "2025 Q2",
+    title: "RAG Specialist — TURING",
+    description:
+      "Designed and executed RAG evaluation pipelines measuring Retrieval Quality (Hit Rate, MRR) and Grounding Accuracy. Curated instruction-tuning datasets to improve Tool Calling reliability for internal LLM agents.",
+  },
+  {
+    year: "2025 Q3",
+    title: "AI Engineer — Mebisoft",
+    description:
+      "Current role designing high-performance Object Detection models (YOLO/RTMDet) and building an Intelligent Data Assistant (Text-to-SQL) for smart manufacturing. Reduced inference latency from 45s to <15s.",
   },
 ];

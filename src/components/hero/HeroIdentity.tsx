@@ -34,9 +34,9 @@ type HeroIdentityProps = {
 };
 
 export function HeroIdentity({
-  name = "Hoang NV",
+  name = "Nguyen Viet Hoang",
   title = "AI Engineer",
-  tagline = "Crafting intelligent systems with creativity and purpose",
+  tagline = "Building intelligent systems with Computer Vision, Agentic RAG & production ML",
 }: HeroIdentityProps) {
   const shouldReduce = useReducedMotion();
   const isDesktop = useMediaQuery(PARALLAX_BREAKPOINT);

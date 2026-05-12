@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   description:
     "AI Engineer portfolio with Studio Ghibli-inspired design. Explore AI/ML projects, skills, and experience through an immersive animated storytelling experience.",
-  metadataBase: new URL("https://username.github.io/Portfolio"),
+  metadataBase: new URL("https://hoangviet-ai.github.io/Portfolio"),
   openGraph: {
     type: "website",
     title: "AI Engineer Portfolio",

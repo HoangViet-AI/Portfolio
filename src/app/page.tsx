@@ -8,12 +8,12 @@ import { ContactSection } from "@/components/sections/ContactSection";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "AI Engineer",
+  name: "Nguyen Viet Hoang",
   jobTitle: "AI Engineer",
-  url: "https://username.github.io/Portfolio",
+  url: "https://hoangviet-ai.github.io/Portfolio",
   sameAs: [
-    "https://github.com/username",
-    "https://linkedin.com/in/username",
+    "https://github.com/HoangViet-AI",
+    "https://linkedin.com/in/nguyenviethoang-ai",
   ],
 };
 

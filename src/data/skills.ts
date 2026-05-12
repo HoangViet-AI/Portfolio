@@ -24,9 +24,20 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "PyTorch", icon: "🔥" },
       { name: "TensorFlow", icon: "🧠", iconUrl: techIcon("tensorflow") },
-      { name: "scikit-learn", icon: "📊" },
-      { name: "Keras", icon: "🔬" },
+      { name: "YOLO", icon: "🎯" },
+      { name: "ConvNeXt", icon: "🔬" },
       { name: "Hugging Face", icon: "🤗" },
+    ],
+  },
+  {
+    name: "Agentic & RAG",
+    slug: "agentic-rag",
+    skills: [
+      { name: "LangGraph", icon: "🕸️" },
+      { name: "LangChain", icon: "🔗", iconUrl: techIcon("langchain_icon") },
+      { name: "FAISS", icon: "🔍" },
+      { name: "OpenAI", icon: "🤖" },
+      { name: "MCP", icon: "🔌" },
     ],
   },
   {
@@ -34,19 +45,9 @@ export const skillCategories: SkillCategory[] = [
     slug: "computer-vision",
     skills: [
       { name: "OpenCV", icon: "👁️" },
-      { name: "YOLOv8", icon: "🎯" },
-      { name: "MediaPipe", icon: "🖐️" },
-      { name: "Pillow", icon: "🖼️" },
-    ],
-  },
-  {
-    name: "NLP",
-    slug: "nlp",
-    skills: [
-      { name: "spaCy", icon: "📝" },
-      { name: "NLTK", icon: "📚" },
-      { name: "LangChain", icon: "🔗", iconUrl: techIcon("langchain_icon") },
-      { name: "Transformers", icon: "🤖" },
+      { name: "RTMDet", icon: "📦" },
+      { name: "CLIP", icon: "🖼️" },
+      { name: "Object Detection", icon: "🎯" },
     ],
   },
   {
@@ -54,11 +55,10 @@ export const skillCategories: SkillCategory[] = [
     slug: "tools-frameworks",
     skills: [
       { name: "Docker", icon: "🐳", iconUrl: techIcon("docker") },
-      { name: "Git", icon: "🌿", iconUrl: techIcon("git") },
       { name: "FastAPI", icon: "⚡", iconUrl: techIcon("fastapi") },
-      { name: "Next.js", icon: "▲", iconUrl: techIcon("next_js") },
-      { name: "PostgreSQL", icon: "🐘", iconUrl: techIcon("postgresql") },
-      { name: "MLflow", icon: "📈" },
+      { name: "Git", icon: "🌿", iconUrl: techIcon("git") },
+      { name: "Flutter", icon: "📱", iconUrl: techIcon("flutter") },
+      { name: "REST API", icon: "🌐" },
     ],
   },
   {
@@ -66,10 +66,8 @@ export const skillCategories: SkillCategory[] = [
     slug: "languages",
     skills: [
       { name: "Python", icon: "🐍", iconUrl: techIcon("python") },
-      { name: "TypeScript", icon: "💎", iconUrl: techIcon("typescript") },
       { name: "SQL", icon: "🗃️" },
-      { name: "Rust", icon: "🦀", iconUrl: techIcon("rust") },
-      { name: "C++", icon: "⚙️", iconUrl: techIcon("c%2B%2B") },
+      { name: "TypeScript", icon: "💎", iconUrl: techIcon("typescript") },
     ],
   },
 ];

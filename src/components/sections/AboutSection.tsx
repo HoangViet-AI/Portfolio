@@ -18,10 +18,11 @@ export function AboutSection() {
 
       <MotionWrapper variant={fadeInUp} once>
         <p className="max-w-3xl mx-auto text-center text-foreground/80 leading-relaxed mb-16">
-          From the moment I wrote my first neural network, I knew AI would be my
-          calling. Every project is a new adventure — like exploring uncharted
-          lands in a Ghibli film, each challenge reveals something beautiful
-          about what machines can learn.
+          AI Engineer with 1+ year of experience in Smart Manufacturing and
+          Agentic Workflows. Winner of AI Hackathons, 4th place at Olympic AI
+          HCMC 2025, and passionate about building production ML systems that
+          make real impact — from Computer Vision pipelines to intelligent
+          RAG-powered assistants.
         </p>
       </MotionWrapper>
 
