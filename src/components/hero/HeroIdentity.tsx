@@ -44,7 +44,7 @@ export function HeroIdentity({
   // Reduced motion: render static content
   if (shouldReduce) {
     return (
-      <div className="absolute inset-0 z-[40] flex flex-col items-center justify-center px-4">
+      <div key="reduced" className="absolute inset-0 z-[40] flex flex-col items-center justify-center px-4">
         <div className="text-center">
           <h1 className="font-heading text-5xl text-foreground sm:text-7xl">
             {name}
@@ -61,7 +61,7 @@ export function HeroIdentity({
   // Mobile: single fade-in instead of stagger
   if (!isDesktop) {
     return (
-      <div className="absolute inset-0 z-[40] flex flex-col items-center justify-center px-4">
+      <div key="mobile" className="absolute inset-0 z-[40] flex flex-col items-center justify-center px-4">
         <MDiv
           className="text-center"
           initial="hidden"
@@ -82,7 +82,7 @@ export function HeroIdentity({
 
   // Desktop: staggered entrance animation
   return (
-    <div className="absolute inset-0 z-[40] flex flex-col items-center justify-center px-4">
+    <div key="desktop" className="absolute inset-0 z-[40] flex flex-col items-center justify-center px-4">
       <MDiv
         className="text-center"
         initial="hidden"
