@@ -24,7 +24,7 @@ export function RunningDog() {
         <img
           src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/totoro-walk.gif`}
           alt=""
-          className="h-16 w-auto"
+          className="h-[4.8rem] w-auto"
           style={{ animationPlayState: playState }}
         />
       </div>
