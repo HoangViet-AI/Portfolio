@@ -1,8 +1,15 @@
 const ICON_BASE =
   "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons";
 
+const LOBE_ICON_BASE =
+  "https://unpkg.com/@lobehub/icons-static-svg@latest/icons";
+
 function techIcon(name: string) {
   return `${ICON_BASE}/${name}.png`;
+}
+
+function lobeIcon(name: string) {
+  return `${LOBE_ICON_BASE}/${name}.svg`;
 }
 
 export interface Skill {
@@ -26,18 +33,18 @@ export const skillCategories: SkillCategory[] = [
       { name: "TensorFlow", icon: "🧠", iconUrl: techIcon("tensorflow") },
       { name: "YOLO", icon: "🎯" },
       { name: "ConvNeXt", icon: "🔬" },
-      { name: "Hugging Face", icon: "🤗" },
+      { name: "Hugging Face", icon: "🤗", iconUrl: lobeIcon("huggingface") },
     ],
   },
   {
     name: "Agentic & RAG",
     slug: "agentic-rag",
     skills: [
-      { name: "LangGraph", icon: "🕸️" },
-      { name: "LangChain", icon: "🔗", iconUrl: techIcon("langchain_icon") },
+      { name: "LangGraph", icon: "🕸️", iconUrl: lobeIcon("langgraph") },
+      { name: "LangChain", icon: "🔗", iconUrl: lobeIcon("langchain") },
       { name: "FAISS", icon: "🔍" },
-      { name: "OpenAI", icon: "🤖" },
-      { name: "MCP", icon: "🔌" },
+      { name: "OpenAI", icon: "🤖", iconUrl: lobeIcon("openai") },
+      { name: "MCP", icon: "🔌", iconUrl: lobeIcon("mcp") },
     ],
   },
   {
