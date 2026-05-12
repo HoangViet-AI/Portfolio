@@ -1,6 +1,14 @@
+const ICON_BASE =
+  "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons";
+
+function techIcon(name: string) {
+  return `${ICON_BASE}/${name}.png`;
+}
+
 export interface Skill {
   name: string;
   icon: string;
+  iconUrl?: string;
 }
 
 export interface SkillCategory {
@@ -15,7 +23,7 @@ export const skillCategories: SkillCategory[] = [
     slug: "ml-deep-learning",
     skills: [
       { name: "PyTorch", icon: "🔥" },
-      { name: "TensorFlow", icon: "🧠" },
+      { name: "TensorFlow", icon: "🧠", iconUrl: techIcon("tensorflow") },
       { name: "scikit-learn", icon: "📊" },
       { name: "Keras", icon: "🔬" },
       { name: "Hugging Face", icon: "🤗" },
@@ -37,7 +45,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "spaCy", icon: "📝" },
       { name: "NLTK", icon: "📚" },
-      { name: "LangChain", icon: "🔗" },
+      { name: "LangChain", icon: "🔗", iconUrl: techIcon("langchain_icon") },
       { name: "Transformers", icon: "🤖" },
     ],
   },
@@ -45,11 +53,11 @@ export const skillCategories: SkillCategory[] = [
     name: "Tools & Frameworks",
     slug: "tools-frameworks",
     skills: [
-      { name: "Docker", icon: "🐳" },
-      { name: "Git", icon: "🌿" },
-      { name: "FastAPI", icon: "⚡" },
-      { name: "Next.js", icon: "▲" },
-      { name: "PostgreSQL", icon: "🐘" },
+      { name: "Docker", icon: "🐳", iconUrl: techIcon("docker") },
+      { name: "Git", icon: "🌿", iconUrl: techIcon("git") },
+      { name: "FastAPI", icon: "⚡", iconUrl: techIcon("fastapi") },
+      { name: "Next.js", icon: "▲", iconUrl: techIcon("next_js") },
+      { name: "PostgreSQL", icon: "🐘", iconUrl: techIcon("postgresql") },
       { name: "MLflow", icon: "📈" },
     ],
   },
@@ -57,11 +65,11 @@ export const skillCategories: SkillCategory[] = [
     name: "Languages",
     slug: "languages",
     skills: [
-      { name: "Python", icon: "🐍" },
-      { name: "TypeScript", icon: "💎" },
+      { name: "Python", icon: "🐍", iconUrl: techIcon("python") },
+      { name: "TypeScript", icon: "💎", iconUrl: techIcon("typescript") },
       { name: "SQL", icon: "🗃️" },
-      { name: "Rust", icon: "🦀" },
-      { name: "C++", icon: "⚙️" },
+      { name: "Rust", icon: "🦀", iconUrl: techIcon("rust") },
+      { name: "C++", icon: "⚙️", iconUrl: techIcon("c%2B%2B") },
     ],
   },
 ];

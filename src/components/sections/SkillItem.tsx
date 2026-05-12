@@ -14,7 +14,18 @@ export function SkillItem({ skill }: SkillItemProps) {
       whileHover={{ scale: 1.08, y: -2 }}
       transition={{ duration: 0.2 }}
     >
-      <span className="text-2xl">{skill.icon}</span>
+      {skill.iconUrl ? (
+        <img
+          src={skill.iconUrl}
+          alt={skill.name}
+          width={32}
+          height={32}
+          className="h-8 w-8 object-contain"
+          loading="lazy"
+        />
+      ) : (
+        <span className="text-2xl">{skill.icon}</span>
+      )}
       <span className="text-sm font-medium text-foreground/80 text-center">
         {skill.name}
       </span>
