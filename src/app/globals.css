@@ -98,27 +98,32 @@
   }
 }
 
-@keyframes dog-run {
-  0% {
-    transform: translateX(calc(100vw + 10px)) scaleX(1);
-  }
-  49% {
-    transform: translateX(-50px) scaleX(1);
+@keyframes totoro-move {
+  0%,
+  100% {
+    transform: translateX(calc(100vw + 10px));
   }
   50% {
-    transform: translateX(-50px) scaleX(-1);
+    transform: translateX(-80px);
   }
-  99% {
-    transform: translateX(calc(100vw + 10px)) scaleX(-1);
+}
+
+@keyframes totoro-flip {
+  0% {
+    transform: scaleX(1);
   }
-  100% {
-    transform: translateX(calc(100vw + 10px)) scaleX(1);
+  50% {
+    transform: scaleX(-1);
   }
 }
 
 .running-dog {
-  animation: dog-run 24s linear infinite;
+  animation: totoro-move 24s linear infinite;
   will-change: transform;
+}
+
+.running-dog img {
+  animation: totoro-flip 24s step-end infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
