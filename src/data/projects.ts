@@ -27,7 +27,7 @@ Built with LangGraph using a Router-Verifier pattern for intelligent query routi
 Includes a custom MCP-server (Model Context Protocol) exposing Google Places API and internal Historical Knowledge Bases as tools for the LLM agent. Strict Guardrails and citation logic ensure every generated "story" is grounded in landmarks.json, eliminating hallucination in historical dates and facts.
 
 Tech Stack: Python, FastAPI, LangGraph, FAISS, OpenAI, Flutter, MCP.`,
-    screenshots: ["/projects/vietstorylens-arch.webp"],
+    screenshots: ["/projects/vietstorylens.webp"],
   },
   {
     slug: "fungi-detection",
@@ -43,23 +43,27 @@ Tech Stack: Python, FastAPI, LangGraph, FAISS, OpenAI, Flutter, MCP.`,
 Designed a hybrid ConvNeXt + Transformer model that combines the local feature extraction strength of ConvNeXt with the global attention mechanism of Transformers, achieving 97.7% accuracy in fungal species classification.
 
 Automated the end-to-end pipeline: data ingestion, cleaning, augmentation, and preprocessing. Led a 4-member team, coordinated research direction, and prepared presentation materials for the competition judges.`,
-    screenshots: [],
+    screenshots: ["/projects/fungi-detection.webp"],
   },
   {
-    slug: "hybrid-ai-detection",
-    title: "Hybrid AI Object Detection",
+    slug: "shrimp-ai-detection",
+    title: "Shrimp AI Detection & Sizing",
     description:
-      "High-performance Object Detection system using YOLO/RTMDet for automated tracking and counting in smart manufacturing. Integrated intelligent contextual reasoning to achieve over 95% automation accuracy at Mebisoft.",
-    techTags: ["YOLO", "RTMDet", "Python", "Docker", "FastAPI"],
+      "AI-powered shrimp health monitoring and length measurement system using YOLO/RTMDet. Detects disease symptoms and measures shrimp body length in real-time for aquaculture quality control, achieving over 95% detection accuracy.",
+    techTags: ["YOLO", "RTMDet", "Python", "Docker", "FastAPI", "OpenCV"],
     thumbnail:
       "linear-gradient(135deg, #87ceeb 0%, #f4a7bb 50%, #f5deb3 100%)",
-    githubUrl: "https://github.com/HoangViet-AI/hybrid-ai-detection",
-    content: `A production-grade object detection system designed and deployed at Mebisoft for smart manufacturing workflows.
+    githubUrl: "https://github.com/HoangViet-AI/shrimp-ai-detection",
+    content: `An AI-powered computer vision system for shrimp aquaculture that combines disease detection and body length measurement in a single pipeline.
 
-Built on YOLO and RTMDet architectures for automated tracking and counting. Integrated intelligent contextual reasoning to achieve over 95% automation accuracy in real-world production environments.
+Built on YOLO and RTMDet architectures to detect and classify shrimp health conditions — identifying disease symptoms such as white spot, black gill, and body deformities. Simultaneously measures shrimp body length with sub-millimeter precision for growth tracking and harvest optimization.
 
-Optimized inference pipelines, successfully reducing latency from 45s to <15s. Enhanced FPS for Computer Vision systems and implemented a SQL Guardrail layer to ensure data security and robust multi-tenancy support.`,
-    screenshots: [],
+The system processes real-time camera feeds from shrimp ponds, providing farmers with instant health alerts and growth analytics. Optimized inference pipelines reduce latency from 45s to <15s, enabling continuous monitoring across multiple ponds.
+
+Integrated intelligent contextual reasoning to achieve over 95% automation accuracy. Implemented a SQL Guardrail layer for data security and robust multi-tenancy support across farm operations.
+
+Tech Stack: Python, YOLO, RTMDet, FastAPI, Docker, OpenCV.`,
+    screenshots: ["/projects/shrimp-detection.webp"],
   },
   {
     slug: "intelligent-data-assistant",
@@ -75,6 +79,6 @@ Optimized inference pipelines, successfully reducing latency from 45s to <15s. E
 The system navigates 62 complex schema tables using Metadata Enrichment and Retrieval-Augmented Generation (RAG) to understand table relationships and column semantics. This enables non-technical users to query farm management data in real-time without SQL knowledge.
 
 Features include multi-turn conversation support, query validation, and result visualization. The system includes guardrails for SQL injection prevention and ensures data security through a robust multi-tenancy layer.`,
-    screenshots: [],
+    screenshots: ["/projects/data-assistant.webp"],
   },
 ];

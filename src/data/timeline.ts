@@ -40,6 +40,6 @@ export const timelineEntries: TimelineEntry[] = [
     year: "2025 Q3",
     title: "AI Engineer — Mebisoft",
     description:
-      "Current role designing high-performance Object Detection models (YOLO/RTMDet) and building an Intelligent Data Assistant (Text-to-SQL) for smart manufacturing. Reduced inference latency from 45s to <15s.",
+      "Current role designing AI-powered Shrimp Detection & Sizing systems (YOLO/RTMDet) for aquaculture and building an Intelligent Data Assistant (Text-to-SQL) for smart manufacturing. Reduced inference latency from 45s to <15s.",
   },
 ];
