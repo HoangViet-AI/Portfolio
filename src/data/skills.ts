@@ -47,7 +47,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "OpenCV", icon: "👁️" },
       { name: "RTMDet", icon: "📦" },
       { name: "CLIP", icon: "🖼️" },
-      { name: "Object Detection", icon: "🎯" },
+      { name: "Roboflow", icon: "🏷️" },
     ],
   },
   {
@@ -58,7 +58,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "FastAPI", icon: "⚡", iconUrl: techIcon("fastapi") },
       { name: "Git", icon: "🌿", iconUrl: techIcon("git") },
       { name: "Flutter", icon: "📱", iconUrl: techIcon("flutter") },
-      { name: "REST API", icon: "🌐" },
+      { name: "PostgreSQL", icon: "🐘", iconUrl: techIcon("postgresql") },
+      { name: "MongoDB", icon: "🍃", iconUrl: techIcon("mongodb") },
     ],
   },
   {
