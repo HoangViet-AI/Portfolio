@@ -22,7 +22,7 @@ const contactLinks = [
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/nguyenviethoang-ai",
+    href: "https://www.linkedin.com/in/jamesnguyen106/",
     icon: "💼",
     label: "LinkedIn",
     external: true,

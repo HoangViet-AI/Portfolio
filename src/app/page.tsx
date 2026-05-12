@@ -13,7 +13,7 @@ const jsonLd = {
   url: "https://hoangviet-ai.github.io/Portfolio",
   sameAs: [
     "https://github.com/HoangViet-AI",
-    "https://linkedin.com/in/nguyenviethoang-ai",
+    "https://www.linkedin.com/in/jamesnguyen106/",
   ],
 };
 
