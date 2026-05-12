@@ -81,4 +81,24 @@ The system navigates 62 complex schema tables using Metadata Enrichment and Retr
 Features include multi-turn conversation support, query validation, and result visualization. The system includes guardrails for SQL injection prevention and ensures data security through a robust multi-tenancy layer.`,
     screenshots: ["/projects/data-assistant.webp"],
   },
+  {
+    slug: "applyai-job-crawler",
+    title: "ApplyAI – AI Job Crawler",
+    description:
+      "AI-powered job aggregation platform scraping 9 Vietnamese job boards with intelligent CV tailoring. Uses GPT-4o to analyze job descriptions and generate role-specific CVs via a LaTeX PDF pipeline, boosting interview rates.",
+    techTags: ["Python", "FastAPI", "React", "OpenAI", "Playwright", "Docker"],
+    thumbnail:
+      "linear-gradient(135deg, #f5deb3 0%, #f4a7bb 50%, #87ceeb 100%)",
+    githubUrl: "https://github.com/HoangViet-AI/ToolExtractJobs",
+    content: `An AI-powered job aggregation and CV optimization platform built for the Ho Chi Minh City job market, scraping 9 major Vietnamese job boards in real-time.
+
+The system uses Playwright-based scrapers to collect job listings from TopCV, VietnamWorks, CareerBuilder, ITviec, LinkedIn, Glints, CareerLink, Jobstreet, and Indeed. Each scraper handles site-specific pagination, authentication, and anti-bot measures.
+
+The AI CV Tailoring engine leverages GPT-4o to analyze job descriptions and automatically restructure the user's CV to highlight relevant experience and skills for each specific role. The tailored CV is rendered through a LaTeX pipeline producing professional PDF output.
+
+Built with a React frontend for job browsing and CV management, FastAPI backend for scraper orchestration and AI processing, SQLAlchemy ORM with PostgreSQL for data persistence, and fully containerized with Docker Compose for one-command deployment.
+
+Tech Stack: Python, FastAPI, React, OpenAI GPT-4o, Playwright, SQLAlchemy, Docker, LaTeX.`,
+    screenshots: ["/projects/applyai-job-crawler.webp"],
+  },
 ];
